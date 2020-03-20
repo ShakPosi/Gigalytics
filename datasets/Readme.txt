@@ -1,3 +1,3 @@
 i. top_200_weekly.csv contains the spotify weekly top 200 tracks starting from March 2019 to Feb 2020. The file combiness records from the United Kingdom region and worldwide weekly charts.
 
-ii. Spotify_Track_Details.csv provides more details regarding the tracks in i above. Details such as track url, artist spotify id and artist music brainz id can be found here.
+ii. Spotify_Track_Details.csv provides more details regarding the tracks in i above. Details such as track_spotifyID, artist_spotifyID, artist_mbid, artist_name, track_url, track_popularity, track_duration_ms, track_is_local, albumID, album_track_number, album_release_date, album_type
