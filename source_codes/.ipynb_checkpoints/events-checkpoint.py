@@ -32,8 +32,8 @@ class Events():
         df = df[df["begin_date_month"] != 0]
         df = df[df["end_date_month"] != 0]
         
-        df['begin_date_day'] = df.type.fillna(1)
-        df['end_date_day'] = df.type.fillna(1)
+        df['begin_date_day'] = df.begin_date_day.fillna(1)
+        df['end_date_day'] = df.end_date_day.fillna(1)
             
         df['begin_date_tmp'] = df['begin_date_year'].astype('int64').astype(str) + '/' + df['begin_date_month'].astype('int64').astype(str) + '/' + df['begin_date_day'].astype('int64').astype(str)
         df['begin_date'] = df['begin_date_tmp'].apply(lambda x: parse(x))
