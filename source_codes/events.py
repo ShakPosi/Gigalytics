@@ -57,6 +57,9 @@ class Events():
         df = df.drop('end_date_tmp', 1)
         df = df.drop('end_date', 1)
         
+        df.begin_date_id = df.begin_date_id.astype('int64')
+        df.end_date_id = df.end_date_id.astype('int64')
+        
         return df.sort_values(by=['id'], ascending=True)
             
 
